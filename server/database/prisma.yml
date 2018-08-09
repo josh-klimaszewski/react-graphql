@@ -1,0 +1,7 @@
+#endpoint: ''endpoint: https://eu1.prisma.sh/throughtheportal-c1bf93/database/dev
+
+datamodel: datamodel.graphql
+secret: mysecret123
+hooks:
+  post-deploy:
+    - yarn graphql get-schema --project database
